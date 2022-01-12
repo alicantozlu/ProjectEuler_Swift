@@ -5,4 +5,28 @@ import UIKit
  What is the 10 001st prime number?
 
  */
-var greeting = "Hello, playground"
+var th = 10001
+
+var i = 3
+var check = true
+var prime:[Int] = [2]
+
+while(true){
+    for k in 2...i-1{
+        if(i % k == 0){
+            check = false
+        }
+    }
+    if(check){
+        prime.append(i)
+    }else{
+     check = true
+    }
+    i += 1
+    if(prime.count == th){
+        print(prime[prime.count-1])
+        break
+    }
+}
+
+//104743
