@@ -1,1 +1,1 @@
-Project Euler Solutions by Swift
+Project Euler Solutions with Swift
